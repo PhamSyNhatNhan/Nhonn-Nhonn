@@ -35,14 +35,19 @@ public class SkillObject : MonoBehaviour
 
     private void ChangeAttackSpeed(float _attackSpeed)
     {
-        amt = GetComponent<Animator>();
-        attackSpeed = _attackSpeed;
-        amt.speed = 100.0f / attackSpeed;
+        if (canSpeedUp)
+        {
+           attackSpeed = _attackSpeed;
+           amt.speed = attackSpeed / 100.0f;
+        }
     }
     
     private void ChangeAttackSpeed()
     {
-        amt.speed = 100.0f / attackSpeed;
+        if (canSpeedUp)
+        {
+            amt.speed = attackSpeed / 100.0f;
+        }
     }
 
     public void SetUp(DamageType type, List<float> damage, float critRate, float critDamage, float attackSpeed)

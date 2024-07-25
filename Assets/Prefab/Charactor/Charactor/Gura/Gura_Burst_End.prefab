@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95edc7897d6ef2743bb3557c7b6484c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canSpeedUp: 0
+  canSpeedUp: 1
   enableDamage:
     serializedVersion: 2
     m_Bits: 128

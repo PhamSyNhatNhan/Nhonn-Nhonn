@@ -103,7 +103,6 @@ public class GuraSkill : PlayerSkill
 
                     if (Enemy.Count != 0)
                     {
-                        gura.CurAttackSpeed += 10.0f;
                         Enemy[0].GetComponent<Stat>().TakeDamage(DamageType.Magic, gura.CaculateDamage(DamageType.Magic, 1.0f), gura.CurCritRate, gura.CurCritDamage);
                     }
                 }
