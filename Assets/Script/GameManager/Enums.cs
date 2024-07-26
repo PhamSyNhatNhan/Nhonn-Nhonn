@@ -36,4 +36,8 @@ public enum SkillType
     Dash
 }
 
-
+public enum ObjectSkillType
+{
+    projectile,
+    bullet,
+}

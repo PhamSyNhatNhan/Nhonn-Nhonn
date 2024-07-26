@@ -51,12 +51,17 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
         {
-            rb.velocity = new Vector2(_Move.x * speed * Time.deltaTime, _Move.y * speed * Time.deltaTime);
+            rb.linearVelocity = new Vector2(_Move.x * speed * Time.deltaTime, _Move.y * speed * Time.deltaTime);
         }
-        else
+        else 
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
+    }
+
+    public void stopMovement()
+    {
+        rb.linearVelocity = Vector2.zero;
     }
 
     protected virtual void CheckInput()

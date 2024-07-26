@@ -26,6 +26,30 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField] private bool debugBurst = true;
     [SerializeField] private bool debugDash = true;
     
+    [Header("Setup")]
+    [SerializeField] protected LayerMask enemyLayer;
+    protected bool canInput = true;
+    
+    [Header("Attack")]
+    protected bool isAttack = false;
+    protected bool canAttack = true;
+    protected List<GameObject> listAttack = new List<GameObject>();
+    
+    [Header("Skill")]
+    protected bool isSkill = false;
+    protected bool canSkill = true;
+    protected List<GameObject> listSkill = new List<GameObject>();
+    
+    [Header("Burst")]
+    protected bool isBurst = false;   
+    protected bool canBurst = true;
+    protected List<GameObject> listBurst = new List<GameObject>();
+    
+    [Header("Dash")]
+    protected bool isDash = false;
+    protected bool canDash = true;
+    protected List<GameObject> listDash = new List<GameObject>();
+    
     protected virtual void Start()
     {
         try

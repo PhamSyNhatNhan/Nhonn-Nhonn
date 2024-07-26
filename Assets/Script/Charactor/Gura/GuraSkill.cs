@@ -9,35 +9,19 @@ public class GuraSkill : PlayerSkill
     private Gura gura;
     private GuraController gc;
     
-    [Header("Setup")]
-    [SerializeField] private LayerMask enemyLayer;
-    private bool canInput = true;
-    
     [Header("Attack")]
-    private bool isAttack = false;
-    private bool canAttack = true;
-    private List<GameObject> listAttack = new List<GameObject>();
     [SerializeField] private float attackRadius1;
     [SerializeField] private Transform attackTransform1;
     
-    [Header("Skill")]
-    private bool isSkill = false;
-    private bool canSkill = true;
-    private List<GameObject> listSkill = new List<GameObject>();
+    //[Header("Skill")]
     
     [Header("Burst")]
-    private bool isBurst = false;   
-    private bool canBurst = true;
-    private List<GameObject> listBurst = new List<GameObject>();
     private bool isDive = false;
     [SerializeField] private GameObject prefabBurstEnd;
     [SerializeField] private Transform transformBurstEnd;
     private Coroutine CrBurstActive;
     
-    [Header("Dash")]
-    private bool isDash = false;
-    private bool canDash = true;
-    private List<GameObject> listDash = new List<GameObject>();
+    //[Header("Dash")]
     
     
     protected override void Start()
@@ -76,7 +60,7 @@ public class GuraSkill : PlayerSkill
     {
         if (canInput)
         {
-            if (canAttack)
+            if (canAttack && !isAttack && !isSkill && !isBurst && !isDash)
             {
                 if (isDive)
                 {
@@ -114,7 +98,7 @@ public class GuraSkill : PlayerSkill
     {
         if (canInput)
         {
-            if (canBurst && listSkillCds[0].SkillCdLeft == 0)
+            if (canBurst && listSkillCds[0].SkillCdLeft == 0 && !isAttack && !isSkill && !isBurst && !isDash)
             {
                 if (!isDive)
                 {
@@ -139,14 +123,16 @@ public class GuraSkill : PlayerSkill
                 else
                 {
                     StopCoroutine(CrBurstActive);
+
+                    isBurst = true;
                     
                     isDive = false;
-                    gc.Rb.velocity = Vector2.zero;
                     gc.CanMove = false;
-                    listBurst[0].GetComponent<SkillObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage, gura.CurAttackSpeed);
+                    listBurst[0].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage);
                     listBurst[0].SetActive(true);
+                    
                     StartCoroutine(BurstEndAnimation(listBurst[0].GetComponent<Animator>()
-                        .GetCurrentAnimatorStateInfo(0).length));
+                        .GetCurrentAnimatorStateInfo(0).length * 0.75f));
                     
                     listSkillCds[0].SkillCdLeft = listSkillCds[0].CurSkillCd;
                 }
@@ -164,6 +150,7 @@ public class GuraSkill : PlayerSkill
     private IEnumerator BurstEndAnimation(float time)
     {
         yield return new WaitForSeconds(time);
+        isBurst = false;
         gura.CanDamge = true;
         gc.CanMove = true;
     }

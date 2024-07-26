@@ -3,32 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GuraBurstEnd : SkillObject
+public class GuraBurstEnd : ProjectileObject
 {
-    [SerializeField] protected float attackRadius;
-    [SerializeField] protected Transform attackTransform;
+    private CircleHitbox hitbox;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        hitbox = GetComponent<CircleHitbox>();
+    }
 
     public override void SendDamage()
     {
-        Collider2D[] DetectObject = Physics2D.OverlapCircleAll(attackTransform.position, attackRadius, base.enableDamage);
+        List<GameObject> Enemy = hitbox.detectObject(EnableDamage);
 
-        List<GameObject> Enemy = new List<GameObject>();
-
-        foreach (Collider2D collider in DetectObject)
+        for (int i = 0; i < Enemy.Count; i++)
         {
-            Enemy.Add(collider.gameObject);
+            Enemy[i].GetComponent<Stat>().TakeDamage(DamageType.Magic, damage[0], critRate, critDamage);
         }
-
-        Enemy.Sort((a, b) => Vector2.Distance(transform.position, a.transform.position).CompareTo(Vector2.Distance(transform.position, b.transform.position)));
-
-        if (Enemy.Count != 0)
-        {
-            Enemy[0].GetComponent<Stat>().TakeDamage(DamageType.Magic, damage[0], critRate, critDamage);
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(attackTransform.position, attackRadius);
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5899283481004283980}
   - component: {fileID: 1820394035258171381}
   - component: {fileID: 8059720963988517779}
+  - component: {fileID: 6338288474803809271}
   m_Layer: 8
   m_Name: Gura_Burst_End
   m_TagString: Projectile
@@ -55,6 +56,7 @@ SpriteRenderer:
   m_RayTraceProcedural: 0
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -136,10 +138,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95edc7897d6ef2743bb3557c7b6484c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canSpeedUp: 1
+  objectSkillType: 0
+  canSpeedUp: 0
   enableDamage:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &6338288474803809271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4037040226521629119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a4c7d3ff6049c478c2c01647992e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   attackRadius: 1
   attackTransform: {fileID: 8019081624803092305}
 --- !u!1 &5730330101199713741
