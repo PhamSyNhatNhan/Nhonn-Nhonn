@@ -21,13 +21,13 @@ public class ProjectileObject : SkillObject
         amt = GetComponent<Animator>();
     }
 
-    private void OnEnable()
+    protected virtual void OnEnable()
     {
         if(canSpeedUp)
             EventManager.Player.OnPlayerAttackSpeedChange.Get("").AddListener((component, data) => ChangeAttackSpeed(float.Parse(data.ToString())));
     }
 
-    private void OnDisable()
+    protected virtual void OnDisable()
     {
         if(canSpeedUp)
             EventManager.Player.OnPlayerAttackSpeedChange.Get("").RemoveListener((component, data) => ChangeAttackSpeed(float.Parse(data.ToString())));

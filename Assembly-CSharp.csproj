@@ -47,16 +47,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Tmp\TestEvent.cs" />
+    <Compile Include="Assets\Script\Charactor\Gura\GuraSpecAttackPer.cs" />
     <Compile Include="Assets\Script\Charactor\Core\PlayerController.cs" />
-    <Compile Include="Assets\Script\Charactor\Gura\GuraAttack_4.cs" />
     <Compile Include="Assets\Script\Obj\PopupText.cs" />
     <Compile Include="Assets\Script\Obj\hitboxDetact\BoxHitbox.cs" />
     <Compile Include="Assets\Script\Obj\hitboxDetact\CircleHitbox.cs" />
     <Compile Include="Assets\Script\Obj\ProjectileObject.cs" />
+    <Compile Include="Assets\Script\Obj\hitboxDetact\EllipseHitbox.cs" />
+    <Compile Include="Assets\Script\Charactor\Gura\GuraSpecAttackEnd.cs" />
     <Compile Include="Assets\Script\GameManager\GameEventManager.cs" />
     <Compile Include="Assets\Script\Charactor\Core\TestSkill.cs" />
     <Compile Include="Assets\Script\Charactor\Core\PlayerSkill.cs" />
     <Compile Include="Assets\Script\Enemy\Dummy\Dummy.cs" />
+    <Compile Include="Assets\Script\Charactor\Gura\GuraNorAttack.cs" />
+    <Compile Include="Assets\Script\Obj\hitboxDetact\CustomPolygonHitbox.cs" />
     <Compile Include="Assets\Script\Charactor\Gura\Gura.cs" />
     <Compile Include="Assets\Script\Shared\Stat.cs" />
     <Compile Include="Assets\Script\GameManager\DamageManager.cs" />
@@ -66,14 +70,13 @@
     <Compile Include="Assets\Script\GameMode\ErMode.cs" />
     <Compile Include="Assets\Script\Obj\SkillObject.cs" />
     <Compile Include="Assets\Script\Charactor\Gura\GuraBurstEnd.cs" />
-    <Compile Include="Assets\Script\Charactor\Gura\GuraAttack_3.cs" />
     <Compile Include="Assets\Script\GameMode\AuditoriumMode.cs" />
     <Compile Include="Assets\Script\Charactor\Gura\GuraController.cs" />
+    <Compile Include="Assets\Script\Charactor\Gura\GuraSpecAttackStart.cs" />
     <Compile Include="Assets\Script\Obj\DisableOnAnimation.cs" />
     <Compile Include="Assets\Script\Charactor\Gura\GuraSkill.cs" />
     <Compile Include="Assets\Script\GameManager\GameManager.cs" />
-    <Compile Include="Assets\Script\Charactor\Gura\GuraAttack_1.cs" />
-    <Compile Include="Assets\Script\Charactor\Gura\GuraAttack_2.cs" />
+    <Compile Include="Assets\Script\Obj\hitboxDetact\SectorHitbox.cs" />
     <Compile Include="Assets\Script\GameManager\Enums.cs" />
     <Compile Include="Assets\Script\Charactor\Core\PlayerControls.cs" />
     <Reference Include="UnityEngine">

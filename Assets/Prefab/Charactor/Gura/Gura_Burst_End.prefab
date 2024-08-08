@@ -155,8 +155,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a4c7d3ff6049c478c2c01647992e56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRadius: 1
-  attackTransform: {fileID: 8019081624803092305}
+  attackPoints:
+  - isShow: 1
+    attackTransform: {fileID: 8019081624803092305}
+    attackRadius: 1.15
 --- !u!1 &5730330101199713741
 GameObject:
   m_ObjectHideFlags: 0

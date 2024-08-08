@@ -1,0 +1,1068 @@
+Using pre-set license
+Built from 'trunk' branch; Version is '6000.0.11f1 (fa01dd6b76d5) revision 16384477'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16215 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+F:\unity_editer\6000.0.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+F:/unity/Nhonn_Nhonn_S
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+63078
+-job-worker-count
+3
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: F:/unity/Nhonn_Nhonn_S
+F:/unity/Nhonn_Nhonn_S
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [7992]  Target information:
+
+Player connection [7992]  * "[IP] 192.168.1.11 [Port] 0 [Flags] 2 [Guid] 3746066790 [EditorId] 3746066790 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-L9FLOH2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [7992] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7992] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+Library Redirect Path: Library/
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+Refreshing native plugins compatible for Editor in 2.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.11f1 (fa01dd6b76d5)
+[Subsystems] Discovering subsystems at path F:/unity_editer/6000.0.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/unity/Nhonn_Nhonn_S/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3935 MB
+    Driver:   32.0.15.6070
+Initialize mono
+Mono path[0] = 'F:/unity_editer/6000.0.11f1/Editor/Data/Managed'
+Mono path[1] = 'F:/unity_editer/6000.0.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/unity_editer/6000.0.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56132
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/unity_editer/6000.0.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: F:/unity_editer/6000.0.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.003200 seconds.
+- Loaded All Assemblies, in  0.542 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 327 ms
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.044 seconds
+Domain Reload Profiling: 1586ms
+	BeginReloadAssembly (171ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (238ms)
+		LoadAssemblies (171ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (233ms)
+			TypeCache.Refresh (231ms)
+				TypeCache.ScanAssembly (210ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1045ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (998ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (514ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (186ms)
+			ProcessInitializeOnLoadMethodAttributes (284ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.767 seconds
+Refreshing native plugins compatible for Editor in 1.30 ms, found 4 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.613 seconds
+Domain Reload Profiling: 3379ms
+	BeginReloadAssembly (608ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (44ms)
+	RebuildCommonClasses (169ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (888ms)
+		LoadAssemblies (527ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (494ms)
+			TypeCache.Refresh (343ms)
+				TypeCache.ScanAssembly (311ms)
+			BuildScriptInfoCaches (112ms)
+			ResolveRequiredComponents (31ms)
+	FinalizeReload (1614ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1231ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (645ms)
+			ProcessInitializeOnLoadMethodAttributes (459ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 216 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6703 unused Assets / (5.3 MB). Loaded Objects now: 7482.
+Memory consumption went from 197.8 MB to 192.5 MB.
+Total: 21.443800 ms (FindLiveObjects: 1.893900 ms CreateObjectMapping: 2.190600 ms MarkObjects: 11.783900 ms  DeleteObjects: 5.573300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 243892.736778 seconds.
+  path: Assets/Sprites
+  artifactKey: Guid(c5c26a459e58e344b97d1b1b5792ef4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites using Guid(c5c26a459e58e344b97d1b1b5792ef4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9ec671913885b9283d7219314fdec219') in 0.0155645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor
+  artifactKey: Guid(e7da456326fbb7649bea8f03769d38c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor using Guid(e7da456326fbb7649bea8f03769d38c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '3714394029fdb939a4d81af276afa98b') in 0.0009596 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.755791 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1.png
+  artifactKey: Guid(fbe4d49a2d3a5884fa58b19f6ab46592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1.png using Guid(fbe4d49a2d3a5884fa58b19f6ab46592) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c24467748d00ea523f997c6e59f8418a') in 0.1009958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2.png
+  artifactKey: Guid(fcc58d1a5f549584da454f65471af01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2.png using Guid(fcc58d1a5f549584da454f65471af01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd1227ec53887206a65150b43b1af683a') in 0.022337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151040.png
+  artifactKey: Guid(966e48b9ceb7f6144bdd0582def0772b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151040.png using Guid(966e48b9ceb7f6144bdd0582def0772b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8e39412cdcd511e0371b91fe1f87a378') in 0.0230909 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151067.png
+  artifactKey: Guid(630539b20849e6e4fb5176f94d847e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151067.png using Guid(630539b20849e6e4fb5176f94d847e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '832d089f492bb8a113c79d9705f30f3c') in 0.0263895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/01 #151052.png
+  artifactKey: Guid(8edcad1dcbca07c4c8abd60ec6d11713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/01 #151052.png using Guid(8edcad1dcbca07c4c8abd60ec6d11713) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'cbb5092bf257dc67686b2921a0657bdf') in 0.0282563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151033.png
+  artifactKey: Guid(5a42784602ec97445a498617a6155deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151033.png using Guid(5a42784602ec97445a498617a6155deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f8b665b5baf1824060334811b51076aa') in 0.0229547 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151066.png
+  artifactKey: Guid(6a416592ec5e384459bddfa73d23c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151066.png using Guid(6a416592ec5e384459bddfa73d23c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd71f532e49f8c6817636531a53d1bb3a') in 0.0217438 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151036.png
+  artifactKey: Guid(914ebd363e9a3a745a6819480db5752c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151036.png using Guid(914ebd363e9a3a745a6819480db5752c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c205c1c34d815f6d241606f988e048fd') in 0.0238475 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151042.png
+  artifactKey: Guid(885e8c2517d5557489b51aa1aaa49c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151042.png using Guid(885e8c2517d5557489b51aa1aaa49c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '7dc7cbeefedd1553fe7504cacc59cb0e') in 0.0216165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151025.png
+  artifactKey: Guid(51986191379de6345b7894da7a5477db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151025.png using Guid(51986191379de6345b7894da7a5477db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd8f1218533d76ba1b94c96838d1afa0a') in 0.0245778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151038.png
+  artifactKey: Guid(a3f77165b93864c4b8ffc660c5c1e999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151038.png using Guid(a3f77165b93864c4b8ffc660c5c1e999) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'f882b86bd229c6b893924bb9b342bba0') in 0.0278611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151059.png
+  artifactKey: Guid(30d6f7d78493979428d156e02bd04fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151059.png using Guid(30d6f7d78493979428d156e02bd04fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'b1b9bef889fc13267a5c68fb388586f6') in 0.0217274 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4.png
+  artifactKey: Guid(ab94ec4025c74af4492038935821bca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4.png using Guid(ab94ec4025c74af4492038935821bca5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'aecd857f9da730f433f198bcbd0b6daf') in 0.0219001 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/01 #151048.png
+  artifactKey: Guid(e286fc5243064fd47a19917ec22b5d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/01 #151048.png using Guid(e286fc5243064fd47a19917ec22b5d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'b8a5f4355076871684e2fba1e54a21da') in 0.0204049 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151076.png
+  artifactKey: Guid(2f7d3d6fa0ecce04b80643d96aa7231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151076.png using Guid(2f7d3d6fa0ecce04b80643d96aa7231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'db558a6b7ccf59d00fa5481c8e2d1d53') in 0.0186642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151094.png
+  artifactKey: Guid(ff1c7492520690b40a84c269af014907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151094.png using Guid(ff1c7492520690b40a84c269af014907) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '51f4a02d0bfe9883adc4c3be25ff7fff') in 0.0242636 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151029.png
+  artifactKey: Guid(453d0a3c67e8f7542a9306021311b49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151029.png using Guid(453d0a3c67e8f7542a9306021311b49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ca888d5a8c8f8ca7c03e6a6f1bd20332') in 0.0216085 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151064.png
+  artifactKey: Guid(93d4be6e23783f64890cd7cd6c88582d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151064.png using Guid(93d4be6e23783f64890cd7cd6c88582d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1dfd994bd30f04ea3278992ead8478d0') in 0.020595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4 #151061.png
+  artifactKey: Guid(c0ceb71b3d6e9c94b9dfbd8dea4ea89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4 #151061.png using Guid(c0ceb71b3d6e9c94b9dfbd8dea4ea89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '0294058c850fe3e177231f5be1940c2a') in 0.02427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151014.png
+  artifactKey: Guid(f6f8acbbdc94cca4396a0cc6bb2c4655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151014.png using Guid(f6f8acbbdc94cca4396a0cc6bb2c4655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'd931306c032a4ffefa12712320d0eae8') in 0.0395447 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5.png
+  artifactKey: Guid(41d138836b14d194f925d662b70cc45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5.png using Guid(41d138836b14d194f925d662b70cc45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '3431d983a47b31f3aacefeabbc6b25f9') in 0.0305912 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151037.png
+  artifactKey: Guid(dc78e408539055148b42199728c5b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151037.png using Guid(dc78e408539055148b42199728c5b29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'cc1f15022fdfe45f4078f169a37e2716') in 0.0280429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4 #151091.png
+  artifactKey: Guid(b31cdad4e1d8ed243b3589e64434ab48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4 #151091.png using Guid(b31cdad4e1d8ed243b3589e64434ab48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9b53e5ff9af58da53aa391123cd95a5b') in 0.0277277 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151071.png
+  artifactKey: Guid(f7da6136016d0984c9a76a8a4a512248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151071.png using Guid(f7da6136016d0984c9a76a8a4a512248) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '2a4d347c93395cc53ba49846b4e4b417') in 0.0232689 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151065.png
+  artifactKey: Guid(12fbdf43aa8f83a4fadf6fcece5d33b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151065.png using Guid(12fbdf43aa8f83a4fadf6fcece5d33b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'e543474ac3b31cdb13dd9acdede50f54') in 0.0220765 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/8 #151041.png
+  artifactKey: Guid(25428143bd3768c4b82532ca45faa57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/8 #151041.png using Guid(25428143bd3768c4b82532ca45faa57c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1e2afe43705b93718348fbe6e08575b2') in 0.0206007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/9.png
+  artifactKey: Guid(b5a003545145747428c2dbe3603ee6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/9.png using Guid(b5a003545145747428c2dbe3603ee6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '48c221d855af6e67632c64ed55471395') in 0.025033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/8.png
+  artifactKey: Guid(3877b4a9310caaa4bb73d06c8a213024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/8.png using Guid(3877b4a9310caaa4bb73d06c8a213024) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'dfa003701be209b7b4b45ed70ed80008') in 0.1150427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151086.png
+  artifactKey: Guid(b20ff93e86fd15949b56592b91632839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151086.png using Guid(b20ff93e86fd15949b56592b91632839) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '4558b60546488391ce74ec27f061674f') in 0.0207816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/16.png
+  artifactKey: Guid(7c1677baf61942e4da16a9858a8a978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/16.png using Guid(7c1677baf61942e4da16a9858a8a978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '6a6f8792908c045eaf173207d29db115') in 0.1450618 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 33
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/14.png
+  artifactKey: Guid(530e54e77edd2754dbe0ab997761ba2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/14.png using Guid(530e54e77edd2754dbe0ab997761ba2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'a90eb27346b614734a4e00c27144c620') in 0.0509747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/6 #151074.png
+  artifactKey: Guid(550ef899acc113b4ca6badb164e0b9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/6 #151074.png using Guid(550ef899acc113b4ca6badb164e0b9b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '80863981a1c1066893e6a536226d0d2c') in 0.0317395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/13 #151016.png
+  artifactKey: Guid(6b4981475a9fb0040be5335ddb8d62f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/13 #151016.png using Guid(6b4981475a9fb0040be5335ddb8d62f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '464bcb98c229607397e34d2d038f5f63') in 0.0347586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151097.png
+  artifactKey: Guid(80be2bbab5971494d89db0eb95577d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151097.png using Guid(80be2bbab5971494d89db0eb95577d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '6afa8073d20c7920b780bf01924ce949') in 0.0319098 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/6 #151035.png
+  artifactKey: Guid(78e3643ea4b6aed4bbbf2a114c944db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/6 #151035.png using Guid(78e3643ea4b6aed4bbbf2a114c944db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8510531dcab40daf57dd3f101cfca719') in 0.0280337 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/7 #151081.png
+  artifactKey: Guid(753c6600930a3cc4a99404ed0e00e798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/7 #151081.png using Guid(753c6600930a3cc4a99404ed0e00e798) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'ef3b3c5e4aad6c105617bf3ee99c68c4') in 0.0754268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/16 #151079.png
+  artifactKey: Guid(331a785136b537743bf19fbcbaa0507c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/16 #151079.png using Guid(331a785136b537743bf19fbcbaa0507c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8093ca76d14413f9178096f2c5ba95fd') in 0.0952119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/8 #151078.png
+  artifactKey: Guid(e67b442e66321754281fdc118e60207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/8 #151078.png using Guid(e67b442e66321754281fdc118e60207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'e76cc17b8c89453ca0089ed96b7ebe78') in 0.0438832 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/12 #151098.png
+  artifactKey: Guid(56611374ddc47584280964279f034b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/12 #151098.png using Guid(56611374ddc47584280964279f034b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'dbed6eb1e1502910d01c13326eec97ed') in 0.0218497 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/sactx-2048x2048-ETC2-14198_point-4f309ecc.png
+  artifactKey: Guid(eb08bdbcfd71db94b8680682415d8964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/sactx-2048x2048-ETC2-14198_point-4f309ecc.png using Guid(eb08bdbcfd71db94b8680682415d8964) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '4fde089d10c0761415e9a54253be6dc5') in 1.3256444 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 439
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.756631 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1.png
+  artifactKey: Guid(fbe4d49a2d3a5884fa58b19f6ab46592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1.png using Guid(fbe4d49a2d3a5884fa58b19f6ab46592) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '809e0f624ce50a247fe419b558ef7bbe') in 0.0196454 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151040.png
+  artifactKey: Guid(966e48b9ceb7f6144bdd0582def0772b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151040.png using Guid(966e48b9ceb7f6144bdd0582def0772b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c6de4174b087b3f7ee4756c9efe670ec') in 0.0240976 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4 #151085.png
+  artifactKey: Guid(dcef3615d6f443a498d3b06f86fe34d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4 #151085.png using Guid(dcef3615d6f443a498d3b06f86fe34d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '36479c75ba4978bd7db4dfa2441fb906') in 0.021953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151033.png
+  artifactKey: Guid(5a42784602ec97445a498617a6155deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151033.png using Guid(5a42784602ec97445a498617a6155deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'efa224b05eadd73fc0c9a4ce38b2c8c2') in 0.0288094 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151072.png
+  artifactKey: Guid(1d12d1ce95d3659429f8af46cc36aa8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151072.png using Guid(1d12d1ce95d3659429f8af46cc36aa8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1183b7c1fffb951c2798eb61a90ffb3e') in 0.0307638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151053.png
+  artifactKey: Guid(265f4bad2f76be84d8a121382b547378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151053.png using Guid(265f4bad2f76be84d8a121382b547378) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '0cfda3b21ae79338968cb71a958d44ec') in 0.0260756 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151066.png
+  artifactKey: Guid(6a416592ec5e384459bddfa73d23c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151066.png using Guid(6a416592ec5e384459bddfa73d23c53d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '976b38abc9ea8256c6f0ce02e2f1e62c') in 0.0204564 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151065.png
+  artifactKey: Guid(12fbdf43aa8f83a4fadf6fcece5d33b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151065.png using Guid(12fbdf43aa8f83a4fadf6fcece5d33b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '784f5489a97e354d2b41f077c40abe8a') in 0.023527 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151032.png
+  artifactKey: Guid(0e21a5a73cac6bb4297da7dd3c6b06b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151032.png using Guid(0e21a5a73cac6bb4297da7dd3c6b06b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '9ac393fd03489a5278f41df9fa10fe2a') in 0.0228781 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151084.png
+  artifactKey: Guid(787de1a611064b94eaf60272f657370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151084.png using Guid(787de1a611064b94eaf60272f657370d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'b111ac62a3df7217a11f69bc22455a9a') in 0.023053 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4 #151075.png
+  artifactKey: Guid(7bd72452ff3fe20438b94a090f7d0d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4 #151075.png using Guid(7bd72452ff3fe20438b94a090f7d0d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '32eebb7aea02bedb566980ca8fe277ea') in 0.0213123 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/6.png
+  artifactKey: Guid(3b248e9ebdffba64e91ae22af2faf5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/6.png using Guid(3b248e9ebdffba64e91ae22af2faf5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '84acfacc9c57a2ae2321085386c217ab') in 0.0209278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151026.png
+  artifactKey: Guid(7d9b3ed71d7918f4cbaa6660180dede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151026.png using Guid(7d9b3ed71d7918f4cbaa6660180dede1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'fac82297375dd5cbe0d3e86cc491c374') in 0.0211013 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151005.png
+  artifactKey: Guid(75b7985b397d4e740b9cd4e2798333c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151005.png using Guid(75b7985b397d4e740b9cd4e2798333c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'b966fec616f6c91f8770515cd5326435') in 0.0199156 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151039.png
+  artifactKey: Guid(1b58261bd6709a74c8f5f0ff0fc379b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151039.png using Guid(1b58261bd6709a74c8f5f0ff0fc379b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '05f6a74fabe6a194f81463903c39b015') in 0.0199452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4 #151011.png
+  artifactKey: Guid(d8aaa6cefdec9a7489efcc0e07ecfe76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4 #151011.png using Guid(d8aaa6cefdec9a7489efcc0e07ecfe76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '365ab676434b8f727d8e11dc4e713f21') in 0.0237055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2.png
+  artifactKey: Guid(fcc58d1a5f549584da454f65471af01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2.png using Guid(fcc58d1a5f549584da454f65471af01d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '66a9d47ae19730e442fa31269264099a') in 0.0209794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151089.png
+  artifactKey: Guid(42102b82697e32f4ca98496e94f74198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151089.png using Guid(42102b82697e32f4ca98496e94f74198) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '7e95f304081e96333bcf9e20f42a5ec6') in 0.0223643 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/01 #151052.png
+  artifactKey: Guid(8edcad1dcbca07c4c8abd60ec6d11713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/01 #151052.png using Guid(8edcad1dcbca07c4c8abd60ec6d11713) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '15c3b2822802bbf02c36ae72279b0ab9') in 0.0214161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4 #151061.png
+  artifactKey: Guid(c0ceb71b3d6e9c94b9dfbd8dea4ea89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4 #151061.png using Guid(c0ceb71b3d6e9c94b9dfbd8dea4ea89b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '62b9fa1973ee92a81fd2c886de3d4957') in 0.0220879 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151097.png
+  artifactKey: Guid(80be2bbab5971494d89db0eb95577d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151097.png using Guid(80be2bbab5971494d89db0eb95577d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c37c536adb628859327c7dc065a74d30') in 0.0210138 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5 #151014.png
+  artifactKey: Guid(f6f8acbbdc94cca4396a0cc6bb2c4655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5 #151014.png using Guid(f6f8acbbdc94cca4396a0cc6bb2c4655) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'bc815c86f042828d22ecc50ea5c46c28') in 0.0207165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/5.png
+  artifactKey: Guid(41d138836b14d194f925d662b70cc45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/5.png using Guid(41d138836b14d194f925d662b70cc45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '7d332abd7321790960f264a48ced002d') in 0.024514 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151025.png
+  artifactKey: Guid(51986191379de6345b7894da7a5477db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151025.png using Guid(51986191379de6345b7894da7a5477db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'e9d0f12d749b8ed5f4b47c3f13676bb3') in 0.0223395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/01 #151045.png
+  artifactKey: Guid(23c0f627ea5061247b4765c0e4f18464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/01 #151045.png using Guid(23c0f627ea5061247b4765c0e4f18464) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '07cb887c0129d3c36edd31033d7e56e5') in 0.0208279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/4 #151031.png
+  artifactKey: Guid(e17b1173ef843fb408ff379d8d25c791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/4 #151031.png using Guid(e17b1173ef843fb408ff379d8d25c791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8d6406282d8fd8f1675bb3d5bc399136') in 0.0208908 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151094.png
+  artifactKey: Guid(ff1c7492520690b40a84c269af014907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151094.png using Guid(ff1c7492520690b40a84c269af014907) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'df0432817b6ceabdd7940421dc6c40b6') in 0.0231736 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/1 #151034.png
+  artifactKey: Guid(2d933394a24582a48bca77dd5e3fcb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/1 #151034.png using Guid(2d933394a24582a48bca77dd5e3fcb89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '97b370a688422fbd57b32c38d0fbbae4') in 0.0182769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/6 #151088.png
+  artifactKey: Guid(c6540b2c3c65f0d48ac0a51b906fd402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/6 #151088.png using Guid(c6540b2c3c65f0d48ac0a51b906fd402) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '35c083ce8f708f3facdbd3a306d47d36') in 0.0231058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/2 #151071.png
+  artifactKey: Guid(f7da6136016d0984c9a76a8a4a512248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/2 #151071.png using Guid(f7da6136016d0984c9a76a8a4a512248) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1ee8b5f7089489713deebbbeb23d53b1') in 0.0195144 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/3 #151068.png
+  artifactKey: Guid(4a3a1ef4f757e6d41ab2594d90a68010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/3 #151068.png using Guid(4a3a1ef4f757e6d41ab2594d90a68010) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'a766cc82184143ca9a9c1000871226dc') in 0.0209089 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.802940 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/7.png
+  artifactKey: Guid(c4f7d2d37b772024192cde75d50e0089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/7.png using Guid(c4f7d2d37b772024192cde75d50e0089) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'cac3b512e4b36a27214d75a1b4674c3e') in 0.0215848 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/7 #151070.png
+  artifactKey: Guid(3ebff73bbc9dcb8479bb63a848a1629b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/7 #151070.png using Guid(3ebff73bbc9dcb8479bb63a848a1629b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '0f0928f6c4697540e349d8098c6931b9') in 0.0220387 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/9.png
+  artifactKey: Guid(b5a003545145747428c2dbe3603ee6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/9.png using Guid(b5a003545145747428c2dbe3603ee6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '87151e052ff816ca2d6f31675c37be33') in 0.0260755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/11 #151022.png
+  artifactKey: Guid(e28c60c9821a98f44b26309339fd362c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/11 #151022.png using Guid(e28c60c9821a98f44b26309339fd362c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '8f34de1aa745d4ce3efa8c0492a06d4c') in 0.0240313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/8 #151054.png
+  artifactKey: Guid(f344a709729bfbf418f762eda727fcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/8 #151054.png using Guid(f344a709729bfbf418f762eda727fcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: 'c78dfa6bc37c8827776ebaa248ccbadd') in 0.0225533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/8.png
+  artifactKey: Guid(3877b4a9310caaa4bb73d06c8a213024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/8.png using Guid(3877b4a9310caaa4bb73d06c8a213024) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '55de3b9964abf7d0c2db10eca7fb089e') in 0.0253232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/7 #151058.png
+  artifactKey: Guid(bfaf7da6b1b36364083d3b91a96a5898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/7 #151058.png using Guid(bfaf7da6b1b36364083d3b91a96a5898) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '430af5144f84cc13c49233b9578b270a') in 0.0259601 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/15 #151062.png
+  artifactKey: Guid(ab635d07c0bb84246ae2035537240c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/15 #151062.png using Guid(ab635d07c0bb84246ae2035537240c64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '97320fc4d3d094e1736a7edef083cc89') in 0.0266258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/17 #151060.png
+  artifactKey: Guid(a03136959cf82ba4d95e2378040ffd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/17 #151060.png using Guid(a03136959cf82ba4d95e2378040ffd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '3cefd4c7af04d461aa858a67cedc0d08') in 0.0252082 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/16.png
+  artifactKey: Guid(7c1677baf61942e4da16a9858a8a978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/16.png using Guid(7c1677baf61942e4da16a9858a8a978e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '85869a4ce59973730d749263f666ac75') in 0.0254772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/14 #151047.png
+  artifactKey: Guid(b7eed66fd106f2a419794e53ac05ca78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/14 #151047.png using Guid(b7eed66fd106f2a419794e53ac05ca78) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '78c86f8c19a93fcc3e4d635cc07c15f0') in 0.0273312 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/7 #151081.png
+  artifactKey: Guid(753c6600930a3cc4a99404ed0e00e798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/7 #151081.png using Guid(753c6600930a3cc4a99404ed0e00e798) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '5735e8546da80666fa6bf7ef49be06f5') in 0.0264932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/9 #151082.png
+  artifactKey: Guid(f5cecd590dbc2ea44a466b7d7fba2aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/9 #151082.png using Guid(f5cecd590dbc2ea44a466b7d7fba2aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '1998dbefa096cdb5fd2c417599050b4c') in 0.0286078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/12.png
+  artifactKey: Guid(166e5b4c1d0283945b214a290c049f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/12.png using Guid(166e5b4c1d0283945b214a290c049f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '81c1718b703117d954e5893b785e3b68') in 0.0313441 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/8 #151087.png
+  artifactKey: Guid(914aebf7e5d86b74a87d80469248c20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/8 #151087.png using Guid(914aebf7e5d86b74a87d80469248c20c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '2a071a1b40350e4a67419d0642a652c7') in 0.0299214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Sprites/Charactor/Gura/Attack/13.png
+  artifactKey: Guid(2dba79ca50e0c8347a74bee0257b1ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Charactor/Gura/Attack/13.png using Guid(2dba79ca50e0c8347a74bee0257b1ff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter)[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 4 workers.
+ -> (artifact id: '0b13faa07d70b093209427521fbbeb29') in 0.0326717 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+

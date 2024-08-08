@@ -133,6 +133,8 @@ public class Stat : MonoBehaviour
 
     public virtual void TakeDamage(DamageType type , float damage, float _critRate, float _critDamage)
     {
+        Debug.Log("TakeDamage");
+        
         if ((Time.time >= lastDamageTime + iFrame) && canDamge)
         {
             lastDamageTime = Time.time;
@@ -218,6 +220,7 @@ public class Stat : MonoBehaviour
         TextMesh tm = popText.GetComponent<TextMesh>();
         if (type == DamageType.True)
         {
+            tm.color = Color.white;
             if (isCrit)
             {
                 tm.text = "\u2727" + damage.ToString();

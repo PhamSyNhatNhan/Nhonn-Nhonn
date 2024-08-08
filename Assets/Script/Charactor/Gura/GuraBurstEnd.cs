@@ -19,7 +19,7 @@ public class GuraBurstEnd : ProjectileObject
 
         for (int i = 0; i < Enemy.Count; i++)
         {
-            Enemy[i].GetComponent<Stat>().TakeDamage(DamageType.Magic, damage[0], critRate, critDamage);
+            Enemy[i].GetComponent<Stat>().TakeDamage(type, damage[0], critRate, critDamage);
         }
     }
 }

@@ -3,17 +3,28 @@ using UnityEngine;
 
 public class CircleHitbox : Hitbox
 {
-    [SerializeField] private float attackRadius;
-    [SerializeField] private Transform attackTransform;
+    [SerializeField] private List<_CircleHitbox> attackPoints;
     
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(attackTransform.position, attackRadius);
+        for (int i = 0; i < attackPoints.Count; i++)
+        {
+            if(!attackPoints[i].IsShow) continue;
+            
+            Gizmos.color = i > 9 ? hitboxColors[9] : hitboxColors[i];
+            Gizmos.DrawWireSphere(attackPoints[i].AttackTransform.position, attackPoints[i].AttackRadius);
+        }
     }
     
     public override List<GameObject> detectObject(LayerMask enableDamage)
     {
-        Collider2D[] DetectObject = Physics2D.OverlapCircleAll(attackTransform.position, attackRadius, enableDamage);
+        return detectObject(enableDamage, 0);
+    }
+
+    public override List<GameObject> detectObject(LayerMask enableDamage, int hitBox)
+    {
+        Collider2D[] DetectObject = Physics2D.OverlapCircleAll(attackPoints[hitBox].AttackTransform.position, attackPoints[
+        hitBox].AttackRadius, enableDamage);
 
         List<GameObject> listObject = new List<GameObject>();
 
@@ -30,5 +41,30 @@ public class CircleHitbox : Hitbox
         
         return listObject;
     }
-    
+}
+
+[System.Serializable]
+public class _CircleHitbox
+{
+    [SerializeField] private bool isShow = true;
+    [SerializeField] private Transform attackTransform;
+    [SerializeField] private float attackRadius;
+
+    public bool IsShow
+    {
+        get => isShow;
+        set => isShow = value;
+    }
+
+    public Transform AttackTransform
+    {
+        get => attackTransform;
+        set => attackTransform = value;
+    }
+
+    public float AttackRadius
+    {
+        get => attackRadius;
+        set => attackRadius = value;
+    }
 }
