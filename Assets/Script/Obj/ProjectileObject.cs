@@ -31,6 +31,7 @@ public class ProjectileObject : SkillObject
     {
         if(canSpeedUp)
             EventManager.Player.OnPlayerAttackSpeedChange.Get("").RemoveListener((component, data) => ChangeAttackSpeed(float.Parse(data.ToString())));
+        
     }
 
     private void ChangeAttackSpeed(float _attackSpeed)

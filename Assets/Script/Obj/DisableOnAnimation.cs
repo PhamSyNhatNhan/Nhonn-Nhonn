@@ -16,8 +16,9 @@ public class DisableOnAnimation : MonoBehaviour
     
     private IEnumerator DisableAfterAnimation()
     {
-        yield return new WaitForSeconds(amt.GetCurrentAnimatorStateInfo(0).length);
+        AnimatorStateInfo stateInfo = amt.GetCurrentAnimatorStateInfo(0);
+        float adjustedTime = stateInfo.length / amt.speed;
+        yield return new WaitForSeconds(adjustedTime);
         gameObject.SetActive(false);
     }
-    
 }

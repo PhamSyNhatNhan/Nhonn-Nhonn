@@ -8,22 +8,39 @@ public class GuraSkill : PlayerSkill
 {
     private Gura gura;
     private GuraController gc;
-    
-    [Header("Attack")]
-    [SerializeField] private float attackRadius1;
-    [SerializeField] private Transform attackTransform1;
-    
+
+    [Header("Attack")] 
+    [SerializeField] private float attackDelay = 0.1f;
+    private int numberAttack = 0;
+    private Coroutine coroutineResetAttack;
+    [SerializeField] private Transform transformNorAttack;
+    [SerializeField] private GameObject prefabAttack1;
+    [SerializeField] private GameObject prefabAttack2;
+    [SerializeField] private GameObject prefabAttack3;
+     
     //[Header("Skill")]
     
     [Header("Burst")]
-    private bool isDive = false;
     [SerializeField] private GameObject prefabBurstEnd;
     [SerializeField] private Transform transformBurstEnd;
+    private bool isDive = false;
     private Coroutine CrBurstActive;
     
     //[Header("Dash")]
-    
-    
+
+
+    private void OnEnable()
+    {
+        EventManager.Player.OnPlayerAttack.Get("endAttack").AddListener((component, data) => OnEndNormalAttack());
+        EventManager.Player.OnPlayerAttackSpeedChange.Get("").AddListener((component, data) => OnSpeedChange());
+    }
+
+    private void OnDisable()
+    {
+        EventManager.Player.OnPlayerAttack.Get("endAttack").RemoveListener((component, data) => OnEndNormalAttack());
+        EventManager.Player.OnPlayerAttackSpeedChange.Get("").RemoveListener((component, data) => OnSpeedChange());
+    }
+
     protected override void Start()
     {
         base.Start();
@@ -35,10 +52,23 @@ public class GuraSkill : PlayerSkill
 
     private void SetUpObject()
     {
+        //Attack
+        GameObject dmpAttackNor1 = Instantiate(prefabAttack1, transformNorAttack);
+        listAttack.Add(dmpAttackNor1);
+        GameObject dmpAttackNor2 = Instantiate(prefabAttack2, transformNorAttack);
+        listAttack.Add(dmpAttackNor2);
+        GameObject dmpAttackNor3 = Instantiate(prefabAttack3, transformNorAttack);
+        listAttack.Add(dmpAttackNor3);
+        
+        listSkillCds.Add(new SkillCd("Attack", SkillType.Attack, attackDelay));
+        
+        for (int i = 0; i < listAttack.Count; i++)
+            listAttack[i].SetActive(false);
+        
+        //Burst
         GameObject dmpBurstEnd = Instantiate(prefabBurstEnd, transformBurstEnd);
         listBurst.Add(dmpBurstEnd);
         listSkillCds.Add(new SkillCd("Burst", SkillType.Burst, 10.0f));
-        
         
         for (int i = 0; i < listBurst.Count; i++)
             listBurst[i].SetActive(false);
@@ -55,6 +85,12 @@ public class GuraSkill : PlayerSkill
             else if (listSkillCds[i].SkillType == SkillType.Dash)
                 listSkillCds[i].CurSkillCd = listSkillCds[i].BaseSkillCd * multiplierCdDash;
     }
+    
+    private void OnSpeedChange()
+    {
+        attackDelay /= (attackDelay / 100);
+        listSkillCds[0].CurSkillCd = attackDelay;
+    }
 
     protected override void TapAttack()
     {
@@ -66,39 +102,55 @@ public class GuraSkill : PlayerSkill
                 {
                     
                 }
-                else
-                
+                else if (listSkillCds[0].SkillCdLeft == 0)
                 {
                     if (EventManager.Player.OnPlayerAttack != null)
                     {
                         EventManager.Player.OnPlayerAttack.Get("").Invoke(this, null);
                     }
                     
-                    Collider2D[] DetectObject = Physics2D.OverlapCircleAll(attackTransform1.position, attackRadius1, enemyLayer);
-
-                    List<GameObject> Enemy = new List<GameObject>();
-
-                    foreach (Collider2D collider in DetectObject)
+                    canAttack = false;
+                    gc.CanFlip = false;
+                    
+                    if (coroutineResetAttack == null)
                     {
-                        Enemy.Add(collider.gameObject);
+                        coroutineResetAttack = StartCoroutine(IEResetAttack());
                     }
-
-                    Enemy.Sort((a, b) => Vector2.Distance(transform.position, a.transform.position).CompareTo(Vector2.Distance(transform.position, b.transform.position)));
-
-                    if (Enemy.Count != 0)
+                    else
                     {
-                        Enemy[0].GetComponent<Stat>().TakeDamage(DamageType.Magic, gura.CaculateDamage(DamageType.Magic, 1.0f), gura.CurCritRate, gura.CurCritDamage);
+                        StopCoroutine(coroutineResetAttack);
+                        coroutineResetAttack = StartCoroutine(IEResetAttack());
                     }
+                    
+                    listAttack[numberAttack].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage, gura.CurAttackSpeed);
+                    listAttack[numberAttack].SetActive(true);
+                    
+                    numberAttack += 1;
+                    if (numberAttack > 2) numberAttack = 0;
                 }
             }
         }
+    }
+
+    private void OnEndNormalAttack()
+    {
+        canAttack = true;
+        listSkillCds[0].SkillCdLeft = listSkillCds[0].CurSkillCd;
+        gc.CanFlip = true;
+    }
+
+    private IEnumerator IEResetAttack()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        numberAttack = 0;
     }
 
     protected override void TapBurst()
     {
         if (canInput)
         {
-            if (canBurst && listSkillCds[0].SkillCdLeft == 0 && !isAttack && !isSkill && !isBurst && !isDash)
+            if (canBurst && listSkillCds[1].SkillCdLeft == 0 && !isAttack && !isSkill && !isBurst && !isDash)
             {
                 if (!isDive)
                 {
@@ -134,7 +186,7 @@ public class GuraSkill : PlayerSkill
                     StartCoroutine(BurstEndAnimation(listBurst[0].GetComponent<Animator>()
                         .GetCurrentAnimatorStateInfo(0).length * 0.75f));
                     
-                    listSkillCds[0].SkillCdLeft = listSkillCds[0].CurSkillCd;
+                    listSkillCds[1].SkillCdLeft = listSkillCds[1].CurSkillCd;
                 }
             }
         }
@@ -157,7 +209,7 @@ public class GuraSkill : PlayerSkill
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(attackTransform1.position, attackRadius1);
+        
     }
 
     public bool IsDive

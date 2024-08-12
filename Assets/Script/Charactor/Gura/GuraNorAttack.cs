@@ -10,7 +10,14 @@ public class GuraAttack : ProjectileObject
         base.Awake();
         hitbox = GetComponent<Hitbox>();
     }
-    
+
+    protected override void OnDisable()
+    {
+        base.OnDisable();
+       
+        EventManager.Player.OnPlayerAttack.Get("endAttack").Invoke(this, null);
+    }
+
     public override void SendDamage()
     {
         List<GameObject> Enemy = hitbox.detectObject(EnableDamage);
