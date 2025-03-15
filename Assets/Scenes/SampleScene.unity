@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -144,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 92645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.9282274, y: 2.3718023, z: -9.950382}
+  m_LocalPosition: {x: 5.949228, y: 2.3718023, z: -9.950382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -294,6 +295,7 @@ GameObject:
   - component: {fileID: 152223623}
   - component: {fileID: 152223622}
   - component: {fileID: 152223629}
+  - component: {fileID: 152223630}
   m_Layer: 6
   m_Name: Gura
   m_TagString: Player
@@ -328,7 +330,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
-  attackDelay: 0.1
+  attackDelay: 0.05
   transformNorAttack: {fileID: 2001237785}
   prefabAttack1: {fileID: 2999990877155140368, guid: 04b765f6798b84c4a829a69829a643f7, type: 3}
   prefabAttack2: {fileID: 92899752031085149, guid: 76370e10dfb4a7c4aaffaa3bb0cdde4f, type: 3}
@@ -382,8 +384,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.07797715, y: -0.0049353093}
-  m_Size: {x: 0.16744375, y: 0.25825277}
+  m_Offset: {x: 0.021464169, y: -0.0013323575}
+  m_Size: {x: 0.15303218, y: 0.27264974}
   m_Direction: 0
 --- !u!50 &152223625
 Rigidbody2D:
@@ -478,7 +480,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cf440d237011c274281224341e65f6cb, type: 3}
+  m_Sprite: {fileID: 6515396712078210808, guid: 1f9dba6c31859b648a420f89016d171c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -498,7 +500,7 @@ Transform:
   m_GameObject: {fileID: 152223621}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.878, y: -0.15651235, z: 0}
+  m_LocalPosition: {x: 0.899, y: -0.15651235, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -576,6 +578,22 @@ MonoBehaviour:
   bonusMultiplierCritDamage: 0
   canDamge: 1
   popupTextPrefab: {fileID: 8285160454245444147, guid: a3dabe48804a204449e3624fb9946647, type: 3}
+--- !u!114 &152223630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152223621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a4c7d3ff6049c478c2c01647992e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoints:
+  - isShow: 1
+    attackTransform: {fileID: 152223628}
+    attackRadius: 3.02
 --- !u!1 &164079811
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,6 +883,7 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
 --- !u!114 &490824402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,7 +1046,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.9282274, y: 2.3718023, z: -9.950382}
+  m_LocalPosition: {x: 5.949228, y: 2.3718023, z: -9.950382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
