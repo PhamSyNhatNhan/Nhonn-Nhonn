@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GuraSkill : PlayerSkill
 {
@@ -22,12 +23,11 @@ public class GuraSkill : PlayerSkill
     [SerializeField] private GameObject prefabAttack3;
      
     //[Header("Skill")]
-    
-    [Header("Burst")]
-    [SerializeField] private GameObject prefabBurstEnd;
-    [SerializeField] private Transform transformBurstEnd;
+    [Header("Ulti")]
+    [SerializeField] private GameObject prefabUltiEnd;
+    [SerializeField] private Transform transformUltiEnd;
     private bool isDive = false;
-    private Coroutine CrBurstActive;
+    private Coroutine CrUltiActive;
     
     //[Header("Dash")]
 
@@ -35,14 +35,14 @@ public class GuraSkill : PlayerSkill
     private void OnEnable()
     {
         EventManager.Player.OnAttackEnd.Get().AddListener((component, data) => OnEndNormalAttack());
-        EventManager.Player.OnPlayerAttackSpeedChange.Get("").AddListener((component, data) => OnSpeedChange());
+        EventManager.Player.OnPlayerAttackSpeedChange.Get("").AddListener((component, data) => OnAttackSpeedChange());
         EventManager.Player.PlayerFlipCall.Get("Gura").AddListener((component) => FlipCall());
     }
 
     private void OnDisable()
     {
         EventManager.Player.OnAttackEnd.Get().RemoveListener((component, data) => OnEndNormalAttack());
-        EventManager.Player.OnPlayerAttackSpeedChange.Get("").RemoveListener((component, data) => OnSpeedChange());
+        EventManager.Player.OnPlayerAttackSpeedChange.Get("").RemoveListener((component, data) => OnAttackSpeedChange());
         EventManager.Player.PlayerFlipCall.Get("Gura").RemoveListener((component) => FlipCall());
     }
 
@@ -53,49 +53,37 @@ public class GuraSkill : PlayerSkill
         gc = GetComponent<GuraController>();
         hitbox = GetComponent<Hitbox>();
         SetUpObject();
-        SetUpCD();
     }
 
     private void SetUpObject()
     {
         //Attack
         GameObject dmpAttackNor1 = Instantiate(prefabAttack1, transformNorAttack);
-        listAttack.Add(dmpAttackNor1);
+        skillObjectsMap.Add("Attack1", dmpAttackNor1);
         GameObject dmpAttackNor2 = Instantiate(prefabAttack2, transformNorAttack);
-        listAttack.Add(dmpAttackNor2);
+        skillObjectsMap.Add("Attack2", dmpAttackNor2);
         GameObject dmpAttackNor3 = Instantiate(prefabAttack3, transformNorAttack);
-        listAttack.Add(dmpAttackNor3);
+        skillObjectsMap.Add("Attack3", dmpAttackNor3);
         
-        listSkillCds.Add(new SkillCd("Attack", SkillType.Attack, attackDelay));
+        skillCdMap.Add("Attack",new SkillCd(SkillType.Attack, attackDelay));
         
-        for (int i = 0; i < listAttack.Count; i++)
-            listAttack[i].SetActive(false);
         
-        //Burst
-        GameObject dmpBurstEnd = Instantiate(prefabBurstEnd, transformBurstEnd);
-        listBurst.Add(dmpBurstEnd);
-        listSkillCds.Add(new SkillCd("Burst", SkillType.Burst, 10.0f));
-        
-        for (int i = 0; i < listBurst.Count; i++)
-            listBurst[i].SetActive(false);
-    }
-    private void SetUpCD()
-    {
-        for (int i = 0; i < listSkillCds.Count; i++)
-            if (listSkillCds[i].SkillType == SkillType.Attack)
-                listSkillCds[i].CurSkillCd = listSkillCds[i].BaseSkillCd * multiplierCdAttack;
-            else if (listSkillCds[i].SkillType == SkillType.Skill)
-                listSkillCds[i].CurSkillCd = listSkillCds[i].BaseSkillCd * multiplierCdSkill;
-            else if (listSkillCds[i].SkillType == SkillType.Burst)
-                listSkillCds[i].CurSkillCd = listSkillCds[i].BaseSkillCd * multiplierCdBurst;
-            else if (listSkillCds[i].SkillType == SkillType.Dash)
-                listSkillCds[i].CurSkillCd = listSkillCds[i].BaseSkillCd * multiplierCdDash;
+        //Ulti
+        GameObject dmpUltiEnd = Instantiate(prefabUltiEnd, transformUltiEnd);
+        skillObjectsMap.Add("UltiEnd",dmpUltiEnd);
+        skillCdMap.Add("Ulti",new SkillCd(SkillType.Ulti, 10.0f));
+
+
+        foreach (var skillObject in skillObjectsMap)
+        {
+            skillObject.Value.SetActive(false);
+        }
     }
     
-    private void OnSpeedChange()
+    private void OnAttackSpeedChange()
     {
         attackDelay /= (attackDelay / 100);
-        listSkillCds[0].CurSkillCd = attackDelay;
+        skillCdMap["Attack"].CurSkillCd = attackDelay;
     }
 
     private void FlipCall()
@@ -111,13 +99,13 @@ public class GuraSkill : PlayerSkill
     {
         if (canInput)
         {
-            if (canAttack && !isAttack && !isSkill && !isBurst && !isDash)
+            if (canAttack && !isAttack && !isSkill && !isUlti && !isDash)
             {
                 if (isDive)
                 {
                     
                 }
-                else if (listSkillCds[0].SkillCdLeft == 0)
+                else if (skillCdMap["Attack"].SkillCdLeft == 0)
                 {
                     if (EventManager.Player.OnPlayerAttack != null)
                     {
@@ -136,9 +124,11 @@ public class GuraSkill : PlayerSkill
                         StopCoroutine(coroutineResetAttack);
                         coroutineResetAttack = StartCoroutine(IEResetAttack());
                     }
+
+                    string attackName = "Attack" + (numberAttack + 1).ToString();
                     
-                    listAttack[numberAttack].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage, gura.CurAttackSpeed);
-                    listAttack[numberAttack].SetActive(true);
+                    skillObjectsMap[attackName].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage, gura.CurAttackSpeed);
+                    skillObjectsMap[attackName].SetActive(true);
                     
                     numberAttack += 1;
                     if (numberAttack > 2) numberAttack = 0;
@@ -150,7 +140,7 @@ public class GuraSkill : PlayerSkill
     private void OnEndNormalAttack()
     {
         canAttack = true;
-        listSkillCds[0].SkillCdLeft = listSkillCds[0].CurSkillCd;
+        skillCdMap["Attack"].SkillCdLeft = skillCdMap["Attack"].CurSkillCd;
         gc.CanFlip = true;
     }
 
@@ -161,63 +151,63 @@ public class GuraSkill : PlayerSkill
         numberAttack = 0;
     }
 
-    protected override void TapBurst()
+    protected override void TapUlti()
     {
         if (canInput)
         {
-            if (canBurst && listSkillCds[1].SkillCdLeft == 0 && !isAttack && !isSkill && !isBurst && !isDash)
+            if (canUlti && skillCdMap["Ulti"].SkillCdLeft == 0 && !isAttack && !isSkill && !isUlti && !isDash)
             {
                 if (!isDive)
                 {
-                    if (EventManager.Player.OnPlayerBurst != null)
+                    if (EventManager.Player.OnPlayerUlti != null)
                     {
-                        EventManager.Player.OnPlayerBurst.Get("").Invoke(this, null);
+                        EventManager.Player.OnPlayerUlti.Get("").Invoke(this, null);
                     }
                     
                     isDive = true;
                     gura.CanDamge = false;
                     
-                    if (CrBurstActive == null)
+                    if (CrUltiActive == null)
                     {
-                        CrBurstActive = StartCoroutine(IEEndBurst());
+                        CrUltiActive = StartCoroutine(IEEndUlti());
                     }
                     else
                     {
-                        StopCoroutine(CrBurstActive);
-                        CrBurstActive = StartCoroutine(IEEndBurst());
+                        StopCoroutine(CrUltiActive);
+                        CrUltiActive = StartCoroutine(IEEndUlti());
                     }
                 }
                 else
                 {
-                    StopCoroutine(CrBurstActive);
+                    StopCoroutine(CrUltiActive);
 
-                    isBurst = true;
+                    isUlti = true;
                     
                     isDive = false;
                     gc.CanMove = false;
-                    listBurst[0].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage);
-                    listBurst[0].SetActive(true);
+                    skillObjectsMap["UltiEnd"].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage);
+                    skillObjectsMap["UltiEnd"].SetActive(true);
                     
-                    StartCoroutine(BurstEndAnimation(listBurst[0].GetComponent<Animator>()
+                    StartCoroutine(UltiEndAnimation(skillObjectsMap["UltiEnd"].GetComponent<Animator>()
                         .GetCurrentAnimatorStateInfo(0).length * 0.75f));
                     
-                    listSkillCds[1].SkillCdLeft = listSkillCds[1].CurSkillCd;
+                    skillCdMap["Ulti"].SkillCdLeft = skillCdMap["Ulti"].CurSkillCd;
                 }
             }
         }
     }
 
-    private IEnumerator IEEndBurst()
+    private IEnumerator IEEndUlti()
     {
         yield return new WaitForSeconds(5.0f);
         
-        TapBurst();
+        TapUlti();
     }
 
-    private IEnumerator BurstEndAnimation(float time)
+    private IEnumerator UltiEndAnimation(float time)
     {
         yield return new WaitForSeconds(time);
-        isBurst = false;
+        isUlti = false;
         gura.CanDamge = true;
         gc.CanMove = true;
     }

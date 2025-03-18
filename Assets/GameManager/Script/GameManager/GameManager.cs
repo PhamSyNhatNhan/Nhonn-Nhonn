@@ -9,7 +9,14 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
+        if (Application.isMobilePlatform)
+        {
+            Application.targetFrameRate = 120;
+        }
+        else
+        {
+            Application.targetFrameRate = 60;
+        }
     }
 
     private void Update()

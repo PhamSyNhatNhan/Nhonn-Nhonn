@@ -32,8 +32,9 @@ public enum SkillType
 {
     Attack,
     Skill,
-    Burst,
-    Dash
+    Ulti,
+    Dash,
+    Burst
 }
 
 public enum ObjectSkillType

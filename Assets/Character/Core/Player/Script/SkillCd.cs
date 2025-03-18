@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class SkillCd
 {
-    private String name;
     private SkillType skillType;
     private float baseSkillCd;
     private float curSkillCd;
@@ -21,17 +20,10 @@ public class SkillCd
         }
     }
 
-    public SkillCd(string name, SkillType skillType, float baseSkillCd)
+    public SkillCd(SkillType skillType, float baseSkillCd)
     {
-        this.name = name;
         this.skillType = skillType;
         this.baseSkillCd = baseSkillCd;
-    }
-
-    public string Name
-    {
-        get => name;
-        set => name = value;
     }
 
     public float BaseSkillCd

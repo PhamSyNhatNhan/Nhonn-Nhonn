@@ -20,10 +20,11 @@ public static class EventManager
         public class CombatEvent : UnityEvent<Component, object> {}
         public GenericEvent<CombatEvent> OnPlayerAttack = new GenericEvent<CombatEvent>();
         public GenericEvent<CombatEvent> OnPlayerSkill = new GenericEvent<CombatEvent>();
-        public GenericEvent<CombatEvent> OnPlayerBurst = new GenericEvent<CombatEvent>();
+        public GenericEvent<CombatEvent> OnPlayerUlti = new GenericEvent<CombatEvent>();
         public GenericEvent<CombatEvent> OnPlayerDash = new GenericEvent<CombatEvent>();
         public GenericEvent<CombatEvent> OnPlayerAttackSpeedChange = new GenericEvent<CombatEvent>();
         public GenericEvent<CombatEvent> OnAttackEnd = new GenericEvent<CombatEvent>();
+        public GenericEvent<CombatEvent> OnPlayerBurst = new GenericEvent<CombatEvent>();
     }
         
         

@@ -14,7 +14,7 @@ public class TestSkill : PlayerSkill
         Debug.Log("Attack");
     }
 
-    protected override void TapBurst()
+    protected override void TapUlti()
     {
         Debug.Log("Burst");
     }
