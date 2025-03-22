@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class Stat : MonoBehaviour
 {
+    [Header("Name")] 
+    [SerializeField] private String nameCharacter;
+    
     [Header("Health")]
     [SerializeField] private float baseHealth = 5000.0f;
     [SerializeField] private float maxHealth;
@@ -93,14 +96,19 @@ public class Stat : MonoBehaviour
     private float lastDamageTime  = -100.0f;
     private float iFrame = 0.02f;
     [SerializeField] private GameObject popupTextPrefab;
-    
-    
+
+
+    private void Awake()
+    {
+        
+    }
+
     private void Start()
     {
         setStartStat();
     }
 
-    protected virtual  void setStartStat()
+    protected virtual void setStartStat()
     {
         maxHealth = baseHealth * (1.0f + (bonusMultiplierHealth / 100.0f)) + bonusFlatHealth;
         curHealth = maxHealth;
@@ -621,7 +629,7 @@ public class Stat : MonoBehaviour
             curAttackSpeed = value;
             if (EventManager.Player.OnPlayerAttackSpeedChange != null)
             {
-                EventManager.Player.OnPlayerAttackSpeedChange.Get("").Invoke(this, curAttackSpeed);
+                EventManager.Player.OnPlayerAttackSpeedChange.Get(nameCharacter).Invoke(this, curAttackSpeed);
             }
         }
     }
@@ -630,5 +638,11 @@ public class Stat : MonoBehaviour
     {
         get => bonusMultiplierAttackSpeed;
         set => bonusMultiplierAttackSpeed = value;
+    }
+    
+    public String NameCharacter
+    {
+        get => nameCharacter;
+        set => nameCharacter = value;
     }
 }

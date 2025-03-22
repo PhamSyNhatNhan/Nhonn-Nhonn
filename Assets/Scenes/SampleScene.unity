@@ -408,7 +408,7 @@ MonoBehaviour:
   multiplierCdSkill: 1
   multiplierCdUlti: 1
   multiplierCdDash: 1
-  multiplierCdBurst: 15
+  multiplierCdBurst: 1
   canHoldAttack: 0
   canHoldSkill: 0
   canHoldUlti: 0
@@ -442,6 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
+  velocityMoveToDefault: 500
+  timeMoveToDefault: 0.15
 --- !u!70 &152223624
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -611,6 +613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c20bc531bcae5124d8b26ee193104a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameCharacter: Gura
   baseHealth: 5000
   maxHealth: 0
   curHealth: 0
@@ -868,6 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e09e981b6d575046b252fb6bf84e7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameCharacter: Dummy
   baseHealth: 20000
   maxHealth: 0
   curHealth: 0

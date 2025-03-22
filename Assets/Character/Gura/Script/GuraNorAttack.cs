@@ -14,10 +14,10 @@ public class GuraAttack : ProjectileObject
     protected override void OnEnable()
     {
         base.OnEnable();
-
+        
         if (EventManager.Player.PlayerFlipCall != null)
         {
-            EventManager.Player.PlayerFlipCall.Get("Gura").Invoke(this);
+            EventManager.Player.PlayerFlipCall.Get(nameChannel).Invoke(this);
         } 
     }
     protected override void OnDisable()
@@ -26,7 +26,7 @@ public class GuraAttack : ProjectileObject
 
         if (EventManager.Player.OnAttackEnd != null)
         {
-            EventManager.Player.OnAttackEnd.Get().Invoke(this, null);
+            EventManager.Player.OnAttackEnd.Get(nameChannel).Invoke(this, null);
         }
     }
 

@@ -56,7 +56,14 @@ public class PlayerSkill : MonoBehaviour
     [Header("Control")]
     protected Dictionary<string, SkillCd> skillCdMap = new Dictionary<string, SkillCd>();
     protected Dictionary<string, GameObject> skillObjectsMap = new Dictionary<string, GameObject>();
+
+
+    protected virtual void Awake()
+    {
+        AwakeSetUp();
+    }
     
+
     protected virtual void Start()
     {
         try
@@ -88,6 +95,8 @@ public class PlayerSkill : MonoBehaviour
         pc.Controller.Burst.performed += context => { PerformedBurst(context); };
         pc.Controller.Burst.canceled += context => { CanceledBurst(context); };
 
+        StartSetUp();
+        
         SetUpCD();
     }
 
@@ -97,7 +106,11 @@ public class PlayerSkill : MonoBehaviour
         {
             var.Value.Update();
         }
+        
     }
+    
+    protected virtual void StartSetUp() {}
+    protected virtual void AwakeSetUp() {}
     
     protected virtual void SetUpCD()
     {
@@ -302,7 +315,7 @@ public class PlayerSkill : MonoBehaviour
     }
     #endregion
     
-    // _____________________________________Ulti_____________________________________
+    // _____________________________________ULTI_____________________________________
     #region Các hàm của Burst
     // Gọi khi Input được kích hoạt
     protected virtual void StartedUlti(InputAction.CallbackContext context)
@@ -488,7 +501,7 @@ public class PlayerSkill : MonoBehaviour
     }
     #endregion
     
-    // _____________________________________Burst_____________________________________
+    // _____________________________________BURST_____________________________________
     #region Các hàm của Burst
     // Gọi khi Input được kích hoạt
     protected virtual void StartedBurst(InputAction.CallbackContext context)
@@ -580,5 +593,6 @@ public class PlayerSkill : MonoBehaviour
         if(debugBurst) Debug.Log("Canceled Hold Burst");
     }
     #endregion
+    
 }
 

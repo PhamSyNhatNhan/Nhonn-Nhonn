@@ -7,22 +7,25 @@ public class GuraController : PlayerController
     private Animator amt;
     private bool isMove = false;
     private GuraSkill gs;
-    
-    protected override void Start()
+
+    protected override void AwakeSetUp()
     {
-        base.Start();
         amt = GetComponent<Animator>();
         gs = GetComponent<GuraSkill>();
     }
-
-    protected override void Update()
+    
+    protected override void StartSetUp()
     {
-        base.Update();
+
     }
 
-    protected override void FixedUpdate()
+    protected override void UpdateSetUp()
     {
-        base.FixedUpdate();
+
+    }
+
+    protected override void FixedUpdateSetUp()
+    {
         AnimatorControl();
     }
 

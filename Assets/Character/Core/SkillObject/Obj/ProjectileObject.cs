@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ProjectileObject : SkillObject
 {
+    protected String nameChannel = "";
+    
     protected DamageType type = DamageType.True;
     protected List<float> damage = new List<float> { 0.0f };
     protected float critRate = 0.0f;
@@ -24,13 +26,13 @@ public class ProjectileObject : SkillObject
     protected virtual void OnEnable()
     {
         if(canSpeedUp)
-            EventManager.Player.OnPlayerAttackSpeedChange.Get("").AddListener((component, data) => ChangeAttackSpeed(float.Parse(data.ToString())));
+            EventManager.Player.OnPlayerAttackSpeedChange.Get(nameChannel).AddListener((component, data) => ChangeAttackSpeed(float.Parse(data.ToString())));
     }
 
     protected virtual void OnDisable()
     {
         if(canSpeedUp)
-            EventManager.Player.OnPlayerAttackSpeedChange.Get("").RemoveListener((component, data) => ChangeAttackSpeed(float.Parse(data.ToString())));
+            EventManager.Player.OnPlayerAttackSpeedChange.Get(nameChannel).RemoveListener((component, data) => ChangeAttackSpeed(float.Parse(data.ToString())));
         
     }
 
@@ -49,6 +51,17 @@ public class ProjectileObject : SkillObject
             amt.speed = attackSpeed / 100.0f;
     }
 
+    public void SetUp(String nameChannel,DamageType type, List<float> damage, float critRate, float critDamage, float attackSpeed)
+    {
+        this.nameChannel = nameChannel;
+        this.type = type;
+        this.damage = damage;
+        this.critRate = critRate;
+        this.critDamage = critDamage;
+        this.attackSpeed = attackSpeed;
+        ChangeAttackSpeed();
+    }
+    
     public void SetUp(DamageType type, List<float> damage, float critRate, float critDamage, float attackSpeed)
     {
         this.type = type;
@@ -58,12 +71,18 @@ public class ProjectileObject : SkillObject
         this.attackSpeed = attackSpeed;
         ChangeAttackSpeed();
     }
+    
     public void SetUp(DamageType type, List<float> damage, float critRate, float critDamage)
     {
         this.type = type;
         this.damage = damage;
         this.critRate = critRate;
         this.critDamage = critDamage;
+    }
+    
+    public void SetUp(String nameChannel)
+    {
+        this.nameChannel = nameChannel;
     }
 
     public virtual void SendDamage(){}

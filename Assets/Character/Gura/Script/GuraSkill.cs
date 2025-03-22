@@ -7,9 +7,9 @@ using UnityEngine.Serialization;
 
 public class GuraSkill : PlayerSkill
 {
-    private Gura gura;
-    private GuraController gc;
-
+    protected Gura guraStat;
+    protected GuraController guraController;
+    
     [Header("Generic")] 
     private Hitbox hitbox;
 
@@ -23,6 +23,7 @@ public class GuraSkill : PlayerSkill
     [SerializeField] private GameObject prefabAttack3;
      
     //[Header("Skill")]
+    
     [Header("Ulti")]
     [SerializeField] private GameObject prefabUltiEnd;
     [SerializeField] private Transform transformUltiEnd;
@@ -34,24 +35,30 @@ public class GuraSkill : PlayerSkill
 
     private void OnEnable()
     {
-        EventManager.Player.OnAttackEnd.Get().AddListener((component, data) => OnEndNormalAttack());
-        EventManager.Player.OnPlayerAttackSpeedChange.Get("").AddListener((component, data) => OnAttackSpeedChange());
-        EventManager.Player.PlayerFlipCall.Get("Gura").AddListener((component) => FlipCall());
+        EventManager.Player.OnAttackEnd.Get(guraStat.NameCharacter).AddListener((component, data) => OnEndNormalAttack());
+        EventManager.Player.OnPlayerAttackSpeedChange.Get(guraStat.NameCharacter).AddListener((component, data) => OnAttackSpeedChange());
+        EventManager.Player.PlayerFlipCall.Get(guraStat.NameCharacter).AddListener((component) => FlipCall());
+        EventManager.Player.OnMoveToEnd.Get(guraStat.NameCharacter).AddListener((component, data) => EndDash());
+
     }
 
     private void OnDisable()
     {
         EventManager.Player.OnAttackEnd.Get().RemoveListener((component, data) => OnEndNormalAttack());
-        EventManager.Player.OnPlayerAttackSpeedChange.Get("").RemoveListener((component, data) => OnAttackSpeedChange());
-        EventManager.Player.PlayerFlipCall.Get("Gura").RemoveListener((component) => FlipCall());
+        EventManager.Player.OnPlayerAttackSpeedChange.Get(guraStat.NameCharacter).RemoveListener((component, data) => OnAttackSpeedChange());
+        EventManager.Player.PlayerFlipCall.Get(guraStat.NameCharacter).RemoveListener((component) => FlipCall());
+        EventManager.Player.OnMoveToEnd.Get(guraStat.NameCharacter).RemoveListener((component, data) => EndDash());
     }
 
-    protected override void Start()
+    protected override void AwakeSetUp()
     {
-        base.Start();
-        gura = GetComponent<Gura>();
-        gc = GetComponent<GuraController>();
+        guraStat = GetComponent<Gura>();
+        guraController = GetComponent<GuraController>();
         hitbox = GetComponent<Hitbox>();
+    }
+
+    protected override void StartSetUp()
+    {
         SetUpObject();
     }
 
@@ -72,10 +79,14 @@ public class GuraSkill : PlayerSkill
         GameObject dmpUltiEnd = Instantiate(prefabUltiEnd, transformUltiEnd);
         skillObjectsMap.Add("UltiEnd",dmpUltiEnd);
         skillCdMap.Add("Ulti",new SkillCd(SkillType.Ulti, 10.0f));
+        
+        //Ulti
+        skillCdMap.Add("Dash",new SkillCd(SkillType.Dash, 1.0f));
 
 
         foreach (var skillObject in skillObjectsMap)
         {
+            skillObject.Value.GetComponent<ProjectileObject>().SetUp(guraStat.NameCharacter);
             skillObject.Value.SetActive(false);
         }
     }
@@ -91,7 +102,7 @@ public class GuraSkill : PlayerSkill
         List<GameObject> Enemy = hitbox.detectObject(enemyLayer);
         if (Enemy.Count != 0)
         {
-            gc.Flipping(Enemy[0].transform);
+            guraController.Flipping(Enemy[0].transform);
         }
     }
 
@@ -109,11 +120,11 @@ public class GuraSkill : PlayerSkill
                 {
                     if (EventManager.Player.OnPlayerAttack != null)
                     {
-                        EventManager.Player.OnPlayerAttack.Get("").Invoke(this, null);
+                        EventManager.Player.OnPlayerAttack.Get(guraStat.NameCharacter).Invoke(this, null);
                     }
                     
                     canAttack = false;
-                    gc.CanFlip = false;
+                    guraController.CanFlip = false;
                     
                     if (coroutineResetAttack == null)
                     {
@@ -127,7 +138,7 @@ public class GuraSkill : PlayerSkill
 
                     string attackName = "Attack" + (numberAttack + 1).ToString();
                     
-                    skillObjectsMap[attackName].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage, gura.CurAttackSpeed);
+                    skillObjectsMap[attackName].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, guraStat.CurCritRate, guraStat.CurCritDamage, guraStat.CurAttackSpeed);
                     skillObjectsMap[attackName].SetActive(true);
                     
                     numberAttack += 1;
@@ -141,7 +152,7 @@ public class GuraSkill : PlayerSkill
     {
         canAttack = true;
         skillCdMap["Attack"].SkillCdLeft = skillCdMap["Attack"].CurSkillCd;
-        gc.CanFlip = true;
+        guraController.CanFlip = true;
     }
 
     private IEnumerator IEResetAttack()
@@ -161,11 +172,11 @@ public class GuraSkill : PlayerSkill
                 {
                     if (EventManager.Player.OnPlayerUlti != null)
                     {
-                        EventManager.Player.OnPlayerUlti.Get("").Invoke(this, null);
+                        EventManager.Player.OnPlayerUlti.Get(guraStat.NameCharacter).Invoke(this, null);
                     }
                     
                     isDive = true;
-                    gura.CanDamge = false;
+                    guraStat.CanDamge = false;
                     
                     if (CrUltiActive == null)
                     {
@@ -184,8 +195,8 @@ public class GuraSkill : PlayerSkill
                     isUlti = true;
                     
                     isDive = false;
-                    gc.CanMove = false;
-                    skillObjectsMap["UltiEnd"].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, gura.CurCritRate, gura.CurCritDamage);
+                    guraController.CanMove = false;
+                    skillObjectsMap["UltiEnd"].GetComponent<ProjectileObject>().SetUp(DamageType.Magic, new List<float>(){1.0f}, guraStat.CurCritRate, guraStat.CurCritDamage);
                     skillObjectsMap["UltiEnd"].SetActive(true);
                     
                     StartCoroutine(UltiEndAnimation(skillObjectsMap["UltiEnd"].GetComponent<Animator>()
@@ -208,9 +219,27 @@ public class GuraSkill : PlayerSkill
     {
         yield return new WaitForSeconds(time);
         isUlti = false;
-        gura.CanDamge = true;
-        gc.CanMove = true;
+        guraStat.CanDamge = true;
+        guraController.CanMove = true;
     }
+    
+    protected override void TapDash()
+    {
+        if (canInput)
+        {
+            if (canDash && skillCdMap["Dash"].SkillCdLeft == 0 && !isAttack && !isSkill && !isUlti && !isDash)
+            {
+                guraController.MoveTo();
+                isDash = true;
+            }
+        }
+    }
+
+    private void EndDash()
+    {
+        isDash = false;
+    }
+    
 
     private void OnDrawGizmos()
     {
