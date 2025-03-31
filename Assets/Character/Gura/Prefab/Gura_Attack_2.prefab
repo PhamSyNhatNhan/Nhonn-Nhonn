@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7663173844764276140}
   - component: {fileID: 5160324834049582786}
   - component: {fileID: 6049599413021051116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gura_Attack_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4855678870975035500}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}

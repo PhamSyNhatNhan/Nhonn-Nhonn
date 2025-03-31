@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6019160389244295268}
   - component: {fileID: 6038851247558807937}
   - component: {fileID: 8601898091469009677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gura_Spec_Attack_Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6620549660930978359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3363312458702125727}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

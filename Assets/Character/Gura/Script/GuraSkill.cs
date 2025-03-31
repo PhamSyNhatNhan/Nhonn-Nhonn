@@ -239,6 +239,12 @@ public class GuraSkill : PlayerSkill
     {
         isDash = false;
     }
+
+    protected override void TapSkill()
+    {
+        //Debug.Log("Skill Active");
+        //EventManager.Enviroment.PerBoolInteractiveEvent.Get("GateMainHall").Invoke(this, true);
+    }
     
 
     private void OnDrawGizmos()

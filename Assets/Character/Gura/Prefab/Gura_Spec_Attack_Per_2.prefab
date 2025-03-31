@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4467869414428525969}
   - component: {fileID: 8588907612729615752}
   - component: {fileID: 8624031943033192693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gura_Spec_Attack_Per_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9144442982351221766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2740580728404068794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8608690288777250875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 426219414121115664}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6814401111208397893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PositionAttack2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

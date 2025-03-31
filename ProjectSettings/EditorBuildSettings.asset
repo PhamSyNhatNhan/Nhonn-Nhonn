@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Start.unity
+    guid: 25826d22d17edda44b0bdb785e783c4c
+  - enabled: 1
+    path: Assets/Scenes/Hall.unity
+    guid: 8e61a26249f77214dacbdfc9117cdd05
+  - enabled: 1
+    path: Assets/Scenes/ErMode.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 71a28cb38729e964c9dd2fde0686ffcf, type: 2}

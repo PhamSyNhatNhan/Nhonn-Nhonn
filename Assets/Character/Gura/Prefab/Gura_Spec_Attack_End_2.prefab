@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2164866272359908208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackPosition3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5530367505354013015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackPosition2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 3611641090832881198}
   - component: {fileID: 2753962368861966422}
   - component: {fileID: 4258376066744456723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gura_Spec_Attack_End_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2138129626770325689}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackPosition1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

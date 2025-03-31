@@ -28,7 +28,7 @@ public class TestEvent : MonoBehaviour
     
     private void AttackEnd()
     {
-        Debug.Log("Attack End" + count);
+        //Debug.Log("Attack End" + count);
         count += 1;
     }
 

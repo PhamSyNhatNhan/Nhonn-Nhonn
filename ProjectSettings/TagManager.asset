@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - Enemy
   - Projectile
@@ -16,7 +16,7 @@ TagManager:
   - Player
   - Enemy
   - Projectile
-  - 
+  - Wall
   - 
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Enviroment
+    uniqueID: 3440093263
+    locked: 0
   - name: Back3
     uniqueID: 1551513471
     locked: 0
@@ -61,3 +64,5 @@ TagManager:
   - name: Pre2
     uniqueID: 1702052479
     locked: 0
+  m_RenderingLayers:
+  - Default
